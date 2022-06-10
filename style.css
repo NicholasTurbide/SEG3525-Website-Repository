@@ -14,3 +14,196 @@ h1{
 h2{
     font-family: "Montserrat", sans-serif;
 }
+
+/*Main*/
+html,body{
+    height:100%;
+    scroll-behavior: smooth;
+}
+
+:target{
+    scroll-margin-top: 4.5rem;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*Nav*/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 20px 10%;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    overflow: hidden;
+    background-color: white;
+    max-height:150px;
+}
+
+.logo {
+    cursor: pointer;
+    height: 70px;
+    width: 70px;
+    float: left;
+}
+
+.nav-links{
+    list-style: none;
+}
+
+.nav-links li{
+    display: inline-block;
+    padding: 10px 20px;
+    transition: all 0.3s ease 0s;
+    color: darkblue;
+}
+
+.nav-links li a{
+    color: blue;
+    text-decoration: none;
+}
+
+.nav-links li a:hover{
+    color: white;
+    background-color: blue;
+    text-decoration: none;
+}
+
+li, a, button{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: white ;
+    text-decoration: none;
+}
+
+button{
+    padding: 9px 25px;
+    background-color: white;
+    border-width:1px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    color: blue;
+    float: right;
+    border-color: blue;
+}
+
+button:hover{
+    background-color: blue;
+    color: white;
+}
+
+/* Home */
+
+.home{
+    height: 100%;
+    background-color: white;
+    display: relative;
+}
+
+.home-background{
+    background-image: url("./images/Physiotherapy.jpeg");
+    background-repeat: no-repeat;
+    height: 100%;
+    position: relative;
+    background-size: cover;
+    z-index: 1;
+}
+
+.home-text{
+    width: 50%;
+    height: 30vh;
+    padding: 50px 40px 40px 40px;
+    margin:auto;
+    position:absolute;
+    z-index: 2;
+    text-align: Center;
+    background-color: white;
+    opacity: 0.75;
+    color: darkblue;
+    display: inline-block;
+    bottom: 35%;
+    right: 25%;
+}
+
+.home-text .h1{
+    font-size: 50px;
+}
+
+.home-text .h1{
+    font-size: 20px;
+}
+
+.Locations{
+    width:100%;
+    height: auto;
+    padding-bottom: 5px;
+}
+
+.locationtext{
+    padding: 50px;
+    text-align: Center;
+}
+
+
+.Location .card-holder{
+    display:flex;
+    justify-content:center;
+}
+
+.card{
+    margin-left:20px;
+    margin-right:20px;
+    cursor:pointer;
+}
+
+
+.services{
+    height: auto;
+    width:100%;
+    
+}
+
+.services h2{
+    text-align: Center;
+    padding-bottom: 10px;
+}
+
+.service{
+    justify-content: left;
+    display:inline-flex;
+    text-align: left;
+    padding-left:50px;
+    width:100%;
+}
+
+.service img{
+    max-width: 200px;
+    max-height: 15%;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+.service button{
+    align-self: right;
+    max-width:fit-content;
+    height: fit-content;
+}
+
+.FAQ h1{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.problems{
+    display: flex;
+    justify-content: center;
+}
+
